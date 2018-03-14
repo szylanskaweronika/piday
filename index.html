@@ -1,1 +1,39 @@
 <!Doctype html>
+<html>
+<head>
+	<title>JavaScript exercises</title>
+</head>
+
+<body>
+
+	<button id="one" onclick="apple()">Press this</button>
+
+	<button id="two" onclick="orange()">Press that</button>
+
+	<button id="three" onclick="cupcake()">Press it</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		
+		function apple(a,b) {
+			console.log(a+b);
+		}
+
+		apple(2,5)
+
+		function orange(){
+			alert("oopsie daisy")
+		}
+
+		function cupcake(){
+			var name = prompt("What is your name?", "Harry Potter");
+			if (name != null){
+				document.getElementById("demo").innerHTML = "Hello " + name + " how are you?";
+			}
+		}
+
+
+	</script>
+
+</body>
+
+</html>
